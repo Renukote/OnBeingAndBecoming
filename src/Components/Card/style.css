@@ -1,0 +1,13 @@
+body .card-flex {
+  display: flex;
+}
+
+body .card-content {
+  height: 100px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
