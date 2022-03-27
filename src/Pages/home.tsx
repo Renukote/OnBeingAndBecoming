@@ -37,7 +37,7 @@ const HomePage = () => {
 
       <Grid container xs={11} spacing={10} sx={{ margin: "20px 30px" }} justifyContent="center">
         {whatToExpect.map((ele, ind) => (
-          <Grid item xs={10} md={3.8} >
+          <Grid item xs={10} md={3.8} key={ind} >
             <ActionAreaCard {...ele}/>
           </Grid>
         ))}

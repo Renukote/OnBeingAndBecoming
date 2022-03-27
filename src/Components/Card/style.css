@@ -11,3 +11,6 @@ body .card-content {
   -webkit-box-orient: vertical;
 }
 
+body .card-image {
+  border-radius: 10px;
+}
