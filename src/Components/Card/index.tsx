@@ -9,8 +9,8 @@ import "./style.css";
 
 export default function ActionAreaCard(props: any) {
   return (
-    <Card sx={{ width: "100%", borderRadius: "10px" }}>
-      <CardActionArea className={props.small ? "card-flex" : ""}>
+    <Card sx={{ width: "100%", borderRadius: "10px" }} id="action-card">
+      <CardActionArea className="card-flex">
         <CardMedia
           component="img"
           height={props.imgHeight}
@@ -18,14 +18,14 @@ export default function ActionAreaCard(props: any) {
           alt=""
           className="card-image"
         />
-        <CardContent>
+        {(props.title && props.content) && <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary" className='card-content'>
             {props.content}
           </Typography>
-        </CardContent>
+        </CardContent>}
       </CardActionArea>
     </Card>
   );

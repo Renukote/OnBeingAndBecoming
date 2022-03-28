@@ -1,5 +1,5 @@
-body .card-flex {
-  display: flex;
+body #action-card {
+  justify-content: center;
 }
 
 body .card-content {
@@ -13,4 +13,15 @@ body .card-content {
 
 body .card-image {
   border-radius: 10px;
+}
+
+@media screen and (min-width: 760px) {
+  body .card-flex {
+    display: flex;
+  }
+
+  body .card-flex > .card-image {
+    height: 300px;
+    width: 300px;
+  }
 }

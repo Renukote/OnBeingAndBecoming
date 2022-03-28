@@ -14,3 +14,10 @@ body .quote {
     margin: 50px;
     background-color: #DBD4C5;
 }
+
+body .who-can-benefit {
+    text-align: center;
+    margin: 60px 0px;
+    font-family: Gilroy;
+    font-size: 1.5rem;
+}
